@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SurveyForm</title>
+    <link rel="stylesheet" href="surveyform.css" type="text/css">
+  </head>
+  <body>
+    <div id="header">
+      <h1 id="title">How can the WWE improve their entertainment value?</h1>
+      <p id="description">Thank you for taking the time to help the WWE improve</p>
+    </div>
+    <form id="survey-form">
+  <div class="form-elements">
+  <label id="name-label">
+    Name
+    <input placeholder="name" id="name" type="text" required/>
+  </label>
+  </div>
+  <div class="form-elements">
+  <label id="email-label">
+    Email
+    <input placeholder="email" id="email" type="email" required/>
+  </label>
+  </div>
+  <div class="form-elements">
+  <label id="number-label">
+    Age
+    <input placeholder="age" id="number" min="5" max="100" type="number" required/>
+  </label>
+  </div>
+  <div class="form-elements">
+  <label id="select-label">
+    Who is your favorite wrestler?
+  </label>
+  <select id="dropdown">
+    <option>Seth Rollins</option>
+    <option>Roman Reigns</option>
+    <option>Cody Rhodes</option>
+    </select>
+  </div>
+  <div class="input-element">
+    <label>Have you ever been to a live event?</label>
+    <div>
+    <label><input type="radio" name="show" value="yes"/>Yes</label>
+    </div>
+    <div>
+    <label>
+    <input type="radio" name="show" value="no"/>No</label>
+    </div>
+  </div>
+<div>
+    <label>What suggestions do you have to improve the WWE?</label>
+    <div>
+    <label><input type="checkbox" name="ideas" value="storylines"/>Better Storylines</label>
+    </div>
+    <div>
+    <label>
+    <input type="checkbox" name="ideas" value="matches"/>Less Wrestling Matches</label>
+    </div>
+    <div>
+    <label>
+    <input type="checkbox" name="ideas" value="promos"/>More Promos</label>
+    </div>
+  </div>
+<div>
+    <label>
+    <input type="checkbox" name="ideas" value="commercials"/>Less Commercials</label>
+    </div>
+    <div>
+    <label>
+    <input type="checkbox" name="ideas" value="factions"/>More Factions</label>
+    </div>
+  </div>
+  <div>
+    <label>
+    <input type="checkbox" name="ideas" value="reigns"/>Shorter Title Reigns</label>
+    </div>
+  </div>
+<div class="input-element">
+<label>Additional Comments</label>
+  <textarea type="text"></textarea>
+  </div>
+  <button type="submit" id="submit">Submit</button>
+</form>
+</body>
+</html>
